@@ -21,7 +21,7 @@ config :vaporbot, VaporbotWeb.Endpoint,
     port: 443,
     keyfile: System.get_env("VAPORBOT_KEYFILE"),
     certfile: System.get_env("VAPORBOT_CERTFILE")
-  ]
+  ],
   url: [host: "localhost", port: {:system, "PORT"}],
   server: true,
   root: ".",
