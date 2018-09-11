@@ -72,3 +72,6 @@ config :logger, level: :info
 # which should be versioned separately.
 #
 # import_config "prod.secret.exs"
+
+config :nadia,
+    token: System.get_env("TOKEN")
