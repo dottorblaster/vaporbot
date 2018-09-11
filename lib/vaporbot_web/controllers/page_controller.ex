@@ -15,7 +15,6 @@ defmodule VaporbotWeb.PageController do
   end
 
   def webhook(conn, _params) do
-    conn |> send_resp(200, Poison.encode!(%{status: true}))
     %{"inline_query" => inline_query} = conn.params
     %{"id" => id, "query" => query} = inline_query
     vaporizedText = Vaporstring.parse(query)
@@ -27,5 +26,7 @@ defmodule VaporbotWeb.PageController do
       description: vaporizedText,
       input_message_content: %{ message_text: vaporizedText }
     }])
+
+    conn |> send_resp(200, Poison.encode!(%{status: true}))
   end
 end
