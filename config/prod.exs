@@ -15,12 +15,12 @@ use Mix.Config
 # which you typically run after static files are built.
 config :vaporbot, VaporbotWeb.Endpoint,
   load_from_system_env: true,
-  http: [port: {:system, "PORT"}],
+  http: [port: 80],
   https: [
     :inet6,
     port: 443,
-    keyfile: System.get_env("VAPORBOT_KEYFILE"),
-    certfile: System.get_env("VAPORBOT_CERTFILE")
+    keyfile: System.get_env("KEYFILE"),
+    certfile: System.get_env("CERTFILE")
   ],
   url: [host: "localhost", port: {:system, "PORT"}],
   server: true,
