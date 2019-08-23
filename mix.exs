@@ -38,7 +38,7 @@ defmodule Vaporbot.Mixfile do
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
-      {:nadia, "~> 0.4.4"},
+      {:nadia, "~> 0.5.0"},
       {:poison, "~> 3.1"},
       {:vaporstring, "~> 1.0"},
       {:distillery, "~> 2.0"}
