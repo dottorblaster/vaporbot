@@ -39,8 +39,9 @@ defmodule Vaporbot.Mixfile do
       {:gettext, "~> 0.11"},
       {:plug_cowboy, "~> 1.0"},
       {:cowboy, "~> 1.0"},
-      {:nadia, "~> 0.4.4"},
+      {:nadia, "~> 0.5.0"},
       {:poison, "~> 3.1"},
+      {:jason, "~> 1.1"},
       {:vaporstring, "~> 1.0"},
       {:distillery, "~> 2.0"}
     ]
