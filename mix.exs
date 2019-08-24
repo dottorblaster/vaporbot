@@ -41,6 +41,7 @@ defmodule Vaporbot.Mixfile do
       {:cowboy, "~> 1.0"},
       {:nadia, "~> 0.5.0"},
       {:poison, "~> 3.1"},
+      {:jason, "~> 1.1"},
       {:vaporstring, "~> 1.0"},
       {:distillery, "~> 2.0"}
     ]
