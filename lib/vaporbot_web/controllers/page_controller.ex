@@ -7,7 +7,7 @@ defmodule VaporbotWeb.PageController do
 
   def vaporfont(conn, _params) do
     %{"payload" => payload} = conn.params
-    conn |> send_resp(200, Poison.encode!(
+    conn |> send_resp(200, Jason.encode!(
       %{
         message: Vaporstring.parse(payload)
       }
@@ -27,6 +27,6 @@ defmodule VaporbotWeb.PageController do
       input_message_content: %{ message_text: vaporizedText }
     }])
 
-    conn |> send_resp(200, Poison.encode!(%{status: true}))
+    conn |> send_resp(200, Jason.encode!(%{status: true}))
   end
 end
