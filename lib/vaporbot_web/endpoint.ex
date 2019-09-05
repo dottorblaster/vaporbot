@@ -1,7 +1,9 @@
 defmodule VaporbotWeb.Endpoint do
   use Phoenix.Endpoint, otp_app: :vaporbot
 
-  socket "/socket", VaporbotWeb.UserSocket
+  socket "/socket", VaporbotWeb.UserSocket,
+    websocket: true,
+    longpoll: false
 
   # Serve at "/" the static files from "priv/static" directory.
   #
