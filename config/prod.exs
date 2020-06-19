@@ -74,4 +74,4 @@ config :logger, level: :info
 # import_config "prod.secret.exs"
 
 config :nadia,
-    token: System.get_env("TOKEN")
+  token: System.get_env("TOKEN")

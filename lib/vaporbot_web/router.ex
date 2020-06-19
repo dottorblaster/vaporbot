@@ -6,7 +6,8 @@ defmodule VaporbotWeb.Router do
   end
 
   scope "/", VaporbotWeb do
-    pipe_through :api # Use the default browser stack
+    # Use the default browser stack
+    pipe_through :api
 
     get "/", PageController, :index
     post "/vaporfont", PageController, :vaporfont
