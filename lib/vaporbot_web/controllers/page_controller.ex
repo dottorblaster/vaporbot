@@ -18,8 +18,6 @@ defmodule VaporbotWeb.PageController do
   end
 
   def webhook(conn, _params) do
-    %{"inline_query" => inline_query} = conn.params
-
     case conn.params do
       %{"inline_query" => inline_query} ->
         %{"id" => id, "query" => query} = inline_query
