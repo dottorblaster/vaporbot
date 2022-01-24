@@ -32,18 +32,18 @@ defmodule Vaporbot.Mixfile do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:phoenix, "~> 1.4.9"},
-      {:phoenix_pubsub, "~> 1.0"},
+      {:phoenix, "~> 1.5"},
+      {:phoenix_pubsub, "~> 2.0"},
       {:phoenix_html, "~> 3.0"},
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:gettext, "~> 0.11"},
-      {:plug_cowboy, "~> 2.0"},
-      {:plug, "~> 1.7"},
-      {:cowboy, "~> 2.5"},
+      {:plug_cowboy, "~> 2.5"},
+      {:plug, "~> 1.12"},
+      {:cowboy, "~> 2.9"},
       {:nadia, "~> 0.7.0"},
-      {:jason, "~> 1.1"},
+      {:jason, "~> 1.3"},
       {:vaporstring, "~> 1.0"},
-      {:distillery, "~> 2.0"}
+      {:distillery, "~> 2.1"}
     ]
   end
 end
