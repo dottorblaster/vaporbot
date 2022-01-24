@@ -10,7 +10,7 @@ config :vaporbot, VaporbotWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "PAXG+ZIbHoBVh2u3yvZaeKyjymxWgSOdzeiMqWwSD+7GKGj9vGRSNHK6RbeI7bNj",
   render_errors: [view: VaporbotWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Vaporbot.PubSub, adapter: Phoenix.PubSub.PG2]
+  pubsub_server: [name: Vaporbot.PubSub]
 
 # Configures Elixir's Logger
 config :logger, :console,
