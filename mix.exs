@@ -35,7 +35,7 @@ defmodule Vaporbot.Mixfile do
       {:phoenix, "~> 1.6"},
       {:phoenix_pubsub, "~> 2.0"},
       {:phoenix_html, "~> 3.0"},
-      {:phoenix_live_view, "~> 0.17.7"},
+      {:phoenix_live_view, "~> 0.18.0"},
       {:phoenix_live_reload, "~> 1.3", only: :dev},
       {:gettext, "~> 0.11"},
       {:plug_cowboy, "~> 2.5"},
